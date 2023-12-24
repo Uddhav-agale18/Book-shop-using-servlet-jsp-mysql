@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: navy;
+        }
+
+        .card {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 40rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .btn-primary:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+        .btn-link {
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-link:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="bg-danger text-white text-center p-2">Book Registration</h2>
+            <form action="register" method="get">
+                <div class="form-group">
+                    <label for="bookName">Book Name:</label>
+                    <input type="text" class="form-control" name="bookName" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookEdition">Book Edition:</label>
+                    <input type="text" class="form-control" name="bookEdition" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookPrice">Book Price:</label>
+                    <input type="text" class="form-control" name="bookPrice" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Register">
+                    <input type="reset" class="btn btn-secondary" value="Cancel">
+                </div>
+            </form>
+<a href='booklist' class="btn btn-danger btn-block mt-3" style="width: 50%;">Go to Book List</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
